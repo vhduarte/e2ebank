@@ -1,6 +1,7 @@
 package banke2e.metodos;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.time.Duration;
 
@@ -52,5 +53,12 @@ driver.findElement(elemento).submit();
 		
 		Wait.until(ExpectedConditions.elementToBeClickable(elemento));
 	}
+	public void validarMsgAlert(String textoEsperado) {
+		String msgAlert = driver.switchTo().alert().getText();
+		assertTrue(msgAlert.contains(textoEsperado));
+		}
+	
+
+
 
 }

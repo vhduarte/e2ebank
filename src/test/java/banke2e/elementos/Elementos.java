@@ -7,11 +7,7 @@ import banke2e.drivers.Driver;
 public class Elementos extends Driver {
 	
 	
-	public String massaCpf = "123.486.700-00";
-	public String massaCpf1 = "545.000.545-81";
-	public String massaNome = "victor";
-	public String massaTel = "1194446350";
-	public String massaCep = "04963170";
+
 	
 	
 	public static By btnAbrirConta = By.xpath("//nav[@class='header-nav']");
@@ -36,9 +32,10 @@ public class Elementos extends Driver {
 	public static By salario = By.xpath("//input[@placeholder='Salário']");
 	public static By emailProfissional = By.xpath("//input[@name='professionalEmail']");
 	public static By btnEnviar = By.xpath("//button[@id='btnEnviar']");
-	
-	
-	
+	public static By senha = By.xpath("//*[@name='password']");	
+	public static By confirmaSenha = By.xpath("//*[@name='confirmPassword']");
+	public static By MsgErroCpfJaCadastrado = By.xpath("//*[@id=\"root\"]/div/main/div[2]/div[1]/span");	
+	public static By btnCadastrar = By.xpath("//*[@type='submit']");
 	
 	
 
