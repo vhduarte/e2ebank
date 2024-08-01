@@ -38,5 +38,17 @@ public class Elementos extends Driver {
 	public static By btnCadastrar = By.xpath("//*[@type='submit']");
 	
 	
+	
+	public static By login = By.xpath("//*[@class='login-button']");
+	public static By usernameLogin = By.xpath("//*[@name='username']");
+	public static By senhaLogin = By.xpath("//*[@name='password']");
+	public static By  continuar = By.xpath("//*[@class='form-button']");
+	public static By naoSouCliente = By.xpath("//*[@class='form-button secondary-button']");
+	
+	public static By cpfRegistro = By.xpath("//input[@name='cpf']");
+	public static By emailRegistro = By.xpath("//input[@name='email']");
+	public static By senhalRegistro = By.xpath("//input[@name='password']");
+	public static By confirmaSenhaRegistro = By.xpath("//input[@name='confirmPassword']");
+	public static By registar = By.xpath("//button[@type='button']");
 
 }

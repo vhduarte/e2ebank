@@ -1,4 +1,4 @@
-package banke2e.steps;
+package banke2e.page;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -13,7 +13,7 @@ import banke2e.massa.MassaDeDados;
 import banke2e.metodos.Metodos;
 import banke2e.runner.Executa;
 
-public class LoginTeste extends Driver {
+public class AbrirContaPage extends Driver {
 	Executa executa = new Executa();
 	Metodos metodo = new Metodos();
 	Elementos el = new Elementos();
