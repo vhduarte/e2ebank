@@ -15,16 +15,16 @@ public class NãoSouClientePage extends Driver{
 	Metodos metodo = new Metodos();
 	Executa executa = new Executa();
 	@Test
-	public void naoSouCliente()throws InterruptedException  {
+	public void naoSouCliente(String cpf, String email, String senha, String confirmaSenha)throws InterruptedException  {
 		executa.iniciarTeste();
 		metodo.clicar(el.login);
 		metodo.clicar(el.naoSouCliente);
 		
 		Thread.sleep(1000);
-		metodo.escrever(el.cpfRegistro, "010010001119");
-		metodo.escrever(el.emailRegistro, "Teste@teste.com");
-		metodo.escrever(el.senhalRegistro, "Teste@123");
-		metodo.escrever(el.confirmaSenhaRegistro,"Teste@123");
+		metodo.escrever(el.cpfRegistro, cpf);
+		metodo.escrever(el.emailRegistro, email);
+		metodo.escrever(el.senhalRegistro, senha);
+		metodo.escrever(el.confirmaSenhaRegistro,confirmaSenha);
 		metodo.clicar(el.registar);
 		driver.quit();
 		

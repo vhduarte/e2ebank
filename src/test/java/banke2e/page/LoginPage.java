@@ -14,14 +14,18 @@ public class LoginPage extends Driver{
 	Executa executa = new Executa();
 	
 	@Test
-	public void login() throws InterruptedException {
-		executa.iniciarTeste();
+	public void login(String usuario, String senha)  {
+	
+		
 		metodo.clicar(el.login);
-		Thread.sleep(1000);
-		metodo.escrever(el.usernameLogin, "526.134.275-99");
-		metodo.escrever(el.senhaLogin, "Teste@123");
+		metodo.escrever(el.usernameLogin, usuario);
+		metodo.escrever(el.senhaLogin, senha);
 		metodo.clicar(el.continuar);
-		driver.quit();
+		
+	
+		
+		
+		
 		
 	}
 

@@ -50,5 +50,8 @@ public class Executa extends Driver{
 	
 		
 	}
+	public static void terminarNavegador() {
+		driver.quit();
+	}
 
 }

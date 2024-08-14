@@ -10,7 +10,7 @@ public class Elementos extends Driver {
 
 	
 	
-	public static By btnAbrirConta = By.xpath("//nav[@class='header-nav']");
+	public static By btnAbrirConta = By.xpath("//button[@class='open-account-button']");
 	public static By cpf = By.xpath("//input[@id='cpf-input']");
 	public static By btnContinuar = By.xpath("//*[@id=\"root\"]/div/main/div[2]/button[2]");
 	public static By nome = By.xpath("//input[@name='firstName']");
@@ -19,7 +19,7 @@ public class Elementos extends Driver {
 	public static By telefone = By.xpath("//input[@placeholder='Telefone']");
 	public static By endereco = By.xpath("//input[@name='address']");
 	public static By rg = By.xpath("//input[@name='rg']");
-	public static By cep = By.xpath("//*[@id=\"root\"]/div/main/div[2]/div[2]/form/div[7]/input");
+	public static By cep = By.xpath("//input[@name='cep']");
 	public static By numero = By.xpath("//input[@name='number']");
 	public static By estado = By.xpath("//input[@name='state']");
 	public static By cidade = By.xpath("//input[@name='city']");
@@ -50,5 +50,5 @@ public class Elementos extends Driver {
 	public static By senhalRegistro = By.xpath("//input[@name='password']");
 	public static By confirmaSenhaRegistro = By.xpath("//input[@name='confirmPassword']");
 	public static By registar = By.xpath("//button[@type='button']");
-
+    public static By saldoDisponivel = By.xpath("//*[@id=\"root\"]/div/main/h1");
 }

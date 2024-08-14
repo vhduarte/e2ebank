@@ -57,7 +57,11 @@ driver.findElement(elemento).submit();
 		String msgAlert = driver.switchTo().alert().getText();
 		assertTrue(msgAlert.contains(textoEsperado));
 		}
+public void esperarElemento(By elemento) {
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	wait.until(ExpectedConditions.visibilityOfElementLocated(elemento));
 	
+}
 
 
 
